@@ -392,6 +392,12 @@
 		url('/images/Roblox.jpg');
 }
 
+#discord {
+	background-image: linear-gradient(
+		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
+		url('/images/Discord.png');
+}
+
 #github {
 	background-size: 101.5%;
 	background-color: #fff;
