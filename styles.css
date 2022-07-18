@@ -445,6 +445,11 @@
 		width: 295px;
 	}
 
+	.account__card_nohover {
+		height: 295px;
+		width: 295px;
+	}
+
 	.account h2 {
 		top: 115%;
 	}
@@ -456,6 +461,11 @@
 	}
 
 	.account__card {
+		height: 275px;
+		width: 275px;
+	}
+
+	.account__card_nohover {
 		height: 275px;
 		width: 275px;
 	}
