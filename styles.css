@@ -421,7 +421,7 @@
 
 @media screen and (max-width: 960px) {
 	.account {
-		height: 1900px;
+		height: 2375px;
 	}
 
 	.account__card {
@@ -436,7 +436,7 @@
 
 @media screen and (max-width: 480px) {
 	.account {
-		height: 1800px;
+		height: 2275px;
 	}
 
 	.account__card {
