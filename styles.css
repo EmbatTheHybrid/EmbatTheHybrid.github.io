@@ -393,6 +393,7 @@
 }
 
 #discord {
+	background-size: 125%;
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
 		url('/images/Discord.png');
