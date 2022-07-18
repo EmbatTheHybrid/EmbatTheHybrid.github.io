@@ -398,14 +398,8 @@
 .account h2 {
 	font-size: 2.5rem;
 	position: relative;
-	top: 105%;
+	top: 110%;
 	text-align: center;
-}
-
-.account__card p {
-	position: absolute;
-	top: 400px;
-	left: 30px;
 }
 
 .account__card:hover {
@@ -416,22 +410,22 @@
 
 @media screen and (max-width: 960px) {
 	.account {
-		height: 1600px;
+		height: 1900px;
 	}
 
-	.account h1 {
-		font-size: 2rem;
-		padding-top: 12rem;
+	.account__card {
+		height: 295px;
+		width: 295px;
+	}
+
+	.account h2 {
+		top: 115%;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.account {
-		height: 1400px;
-	}
-
-	.account h1 {
-		font-size: 1.2rem;
+		height: 1800px;
 	}
 
 	.account__card {
@@ -467,9 +461,19 @@
 
 .footer__container{
 	background-color: var(--navbar-color);
-	padding: 4rem 0;
+	padding: 4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+	#about_content {
+		padding-bottom: 1.5rem;
+	}
+
+	#about-me {
+		font-size: 1.5rem;
+	}
 }
