@@ -1,7 +1,8 @@
 :root {
 	--navbar-color: #38013d;
 	--main-color: #3c253e;
-	--dropdown-color: #2c0330;
+	--dropdown-color: #300833;
+	--gradient-color: #3A023F;
 	--gradient-black: rgba(17,17,17,0.3);
 	--border-color: #180e1b;
 	--main-text: rgb(247, 204, 242);
@@ -24,6 +25,8 @@
 	position: sticky;
 	top: 0;
 	z-index: 999;
+	box-shadow: 0 0 15px var(--navbar-color);
+	transition: top 0.5s;
 }
 
 .navbar__container {
@@ -129,11 +132,10 @@
 		transition: all 0.5s ease;
 		height: 50vh;
 		z-index: -1;
-		background: var(--dropdown-color);
+		background-image: linear-gradient(to bottom, var(--gradient-color), var(--dropdown-color) 15%, var(--dropdown-color) 100%);
 	}
 
 	.navbar__menu.active {
-		background: var(--dropdown-color);
 		top: 100%;
 		opacity: 1;
 		transition: all 0.5s ease;
@@ -206,7 +208,7 @@
 
 /* Hero section */
 .main {
-	background-color: var(--main-color);
+	background-image: linear-gradient(to bottom, var(--gradient-color), var(--main-color) 20%, var(--main-color) 80%, var(--gradient-color) 100%);
 }
 
 .main__container {
@@ -216,7 +218,6 @@
 	justify-self: center;
 	margin: 0 auto;
 	height: 75vh;
-	background-color: var(--main-color);
 	z-index: 1;
 	width: 100%;
 	max-width: 1300px;
@@ -285,6 +286,10 @@
 		height: 120vh;
 	}
 
+	.main {
+		background-image: linear-gradient(to bottom, var(--gradient-color), var(--main-color) 10%, var(--main-color) 90%, var(--gradient-color) 100%);
+	}
+
 	#index_container {
 		padding-bottom: 90%;
 	}
@@ -332,12 +337,12 @@
 
 /* Account section */
 .account {
-	background-color: var(--main-color);
+	/* background-color: var(--main-color); */
 	background: var(--main-color);
 }
 
 .account__container {
-	background-color: var(--main-color);
+	/* background-color: var(--main-color); */
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -368,6 +373,13 @@
 	background-position: center;
 	text-decoration: none;
 	color: #fff;
+}
+
+.account__container h2 {
+	font-size: 2.5rem;
+	position: relative;
+	top: 110%;
+	text-align: center;
 }
 
 .account__card_nohover {
@@ -423,13 +435,6 @@
 		url('/images/Github.svg');
 }
 
-.account h2 {
-	font-size: 2.5rem;
-	position: relative;
-	top: 110%;
-	text-align: center;
-}
-
 .account__card:hover {
 	transform: scale(1.05);
 	transition: 0.2s ease-in;
@@ -472,10 +477,6 @@
 	}
 }
 
-.aboutme {
-	background-color: var(--main-color);
-}
-
 #about_container {
 	height: auto;
 	display: flex;
@@ -509,9 +510,5 @@
 @media screen and (max-width: 960px) {
 	#about_content {
 		padding-bottom: 1.5rem;
-	}
-
-	#about-me {
-		font-size: 1.5rem;
 	}
 }
