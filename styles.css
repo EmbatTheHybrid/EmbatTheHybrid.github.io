@@ -211,6 +211,10 @@
 	background-image: linear-gradient(to bottom, var(--gradient-color), var(--main-color) 20%, var(--main-color) 80%, var(--gradient-color) 100%);
 }
 
+#index_container {
+	height: 75vh;
+}
+
 .main__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -279,6 +283,10 @@
 		height: 120vh;
 	}
 
+	#index_container {
+		height: 100vh;
+	}
+
 	#more-information {
 		font-size: 2rem;
 	}
@@ -287,26 +295,28 @@
 		background-image: linear-gradient(to bottom, var(--gradient-color), var(--main-color) 10%, var(--main-color) 90%, var(--gradient-color) 100%);
 	}
 
-	#index_container {
-		padding-bottom: 90%;
-	}
-
 	.main__content {
 		text-align: center;
 		margin-bottom: 4rem;
 	}
 
 	.main__content h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 		margin-top: 2rem;
 	}
 }
 
+@media screen and (max-width: 590px) {
+	#index_container {
+		height: 125vh;
+	}
+}
+
 @media screen and (max-width: 480px) {
-	.main__btn {
-		padding: 12px 36px;
-		margin: 2.5rem 0;
-	}	
+	
+	#index_container {
+		height: 135vh;
+	}
 }
 
 /* Account section */
@@ -317,6 +327,7 @@
 
 .account__container {
 	/* background-color: var(--main-color); */
+	
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -325,6 +336,7 @@
 
 #accounts_container {
 	height: 25vh;
+	margin-top: 0rem;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -351,6 +363,10 @@
 	background-position: center;
 	text-decoration: none;
 	color: #fff;
+}
+
+#account_info {
+	height: 17.5vh;
 }
 
 .account__container h2 {
@@ -427,9 +443,14 @@
 		width: 275px;
 	}
 
+	#account_info {
+		height: 20vh
+	}
+
 	#accounts_container {
-		height: 30vh;
-		margin-bottom: 0rem;
+		height: 40vh;
+		margin-top: -2rem;
+		/* margin-bottom: 0rem; */
 	}
 
 	.account__card_nohover h2 {
@@ -491,5 +512,10 @@
 @media screen and (max-width: 960px) {
 	#about_content {
 		padding-bottom: 1.5rem;
+		height: 130vh;
+	}
+
+	#about-me {
+		bottom: 4rem;
 	}
 }
