@@ -353,13 +353,15 @@
 }
 
 .account__card {
-	margin: 5rem;
+	padding-bottom: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 5rem;
 	height: 350px;
 	width: 350px;
 	border: 11px solid var(--border-color);
 	border-radius: 50%;
 	margin-bottom: 5rem;
-	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
 	background-size: cover;
@@ -371,27 +373,25 @@
 .account__container h2 {
 	font-size: 2.5rem;
 	position: relative;
-	top: 110%;
+	top: 145%;
 	text-align: center;
 }
 
 .account__card_nohover {
-	margin: 5rem;
+	padding-bottom: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 5rem;
 	height: 350px;
 	width: 350px;
 	border: 11px solid var(--border-color);
 	border-radius: 50%;
 	margin-bottom: 5rem;
-	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
 	background-size: cover;
 	background-position: center;
 	color: #fff;
-}
-
-#container_padding_down {
-	padding-bottom: 5rem;
 }
 
 #youtube {
@@ -435,35 +435,43 @@
 }
 
 @media screen and (max-width: 960px) {
+	.account__card h2 {
+		top: 160%;
+	}
+
 	.account__card {
 		height: 275px;
 		width: 275px;
 	}
 
+	.account__card_nohover h2 {
+		top: 160%;
+	}
+
 	.account__card_nohover {
 		height: 275px;
 		width: 275px;
-	}
-
-	.account h2 {
-		top: 115%;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.account__card {
-		height: 195px;
-		width: 195px;
-	}
-
-	.account__card_nohover {
-		height: 195px;
-		width: 195px;
-	}
-
 	.account__container h2 {
 		font-size: 2rem;
 	}
+
+	.account__card {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.account__card_nohover {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	
 }
 
 #about_container {
