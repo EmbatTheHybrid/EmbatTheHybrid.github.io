@@ -395,27 +395,27 @@
 #youtube {
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
-		url('/main/images/Youtube.png');
+		url('./images/Youtube.png');
 	
 }
 
 #twitter {
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
-		url('/main/images/Twitter.png');
+		url('./images/Twitter.png');
 }
 
 #roblox {
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
-		url('/main/images/Roblox.jpg');
+		url('./images/Roblox.jpg');
 }
 
 #discord {
 	background-size: 125%;
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
-		url('/main/images/Discord.png');
+		url('./images/Discord.png');
 }
 
 #github {
@@ -423,7 +423,7 @@
 	background-color: #fff;
 	background-image: linear-gradient(
 		to bottom, rgba(0,0,0,0) 0%, var(--gradient-black) 100%), 
-		url('/main/images/Github.svg');
+		url('./images/Github.svg');
 }
 
 .account__card:hover {
