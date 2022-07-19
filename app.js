@@ -6,6 +6,14 @@ menu.addEventListener('click', () => {
 	menuLinks.classList.toggle('active')
 })
 
+function setRandomImage(element, imageFolder) {
+	if (element == null) {
+		return;
+	}
+
+	element.style.backgroundImage = "url('/images/Previews/" + imageFolder + "/" + (Math.floor(Math.random() * 3) + 1) + ".png"
+} 
+
 // Code to make the scroll bar be visible or invisible depending on if you scroll or not
 
 let navbar = document.querySelector(".navbar")
@@ -33,3 +41,7 @@ window.onscroll = function() {
 		navbar.style.top = "-100px"
 	}
 }
+
+// The other thing
+
+setRandomImage(document.getElementById('infiniteEmbat'), "Infinite")
