@@ -249,17 +249,10 @@
 }
 
 #more-information {
-	font-size: 1.75rem;
+	font-size: 2.5rem;
 	background-color: var(--main-text);
 	background-image: none;
 }
-
-/* .main__content p {
-	margin-top: 1rem;
-	font-size: 2rem;
-	font-weight: 700;
-	color: #fff;
-} */
 
 .main__img--container {
 	text-align: center;
@@ -286,6 +279,10 @@
 		height: 120vh;
 	}
 
+	#more-information {
+		font-size: 2rem;
+	}
+
 	.main {
 		background-image: linear-gradient(to bottom, var(--gradient-color), var(--main-color) 10%, var(--main-color) 90%, var(--gradient-color) 100%);
 	}
@@ -300,27 +297,12 @@
 	}
 
 	.main__content h1 {
-		font-size: 2.5rem;
-		margin-top: 2rem;;
-	}
-
-	.main__content p {
-		margin-top: 1rem;
-		font-size: 1.5rem;
+		font-size: 3rem;
+		margin-top: 2rem;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	.main__content h1 {
-		font-size: 2rem;
-		margin-top: 3rem;
-	}
-
-	.main__content p {
-		margin-top: 2rem;
-		font-size: 1.5rem;
-	}
-
 	.main__btn {
 		padding: 12px 36px;
 		margin: 2.5rem 0;
@@ -350,6 +332,7 @@
 
 #accounts_container h1 {
 	text-align: center;
+	margin-bottom: 2.5rem;
 }
 
 .account__card {
@@ -444,6 +427,11 @@
 		width: 275px;
 	}
 
+	#accounts_container {
+		height: 30vh;
+		margin-bottom: 0rem;
+	}
+
 	.account__card_nohover h2 {
 		top: 160%;
 	}
@@ -468,10 +456,6 @@
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
-}
-
-@media screen and (max-width: 360px) {
-	
 }
 
 #about_container {
