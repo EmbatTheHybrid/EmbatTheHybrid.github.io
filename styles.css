@@ -507,10 +507,6 @@
 	cursor: pointer;
 }
 
-#infiniteEmbat {
-	background-image: url('./images/Previews/Infinite/1.png');
-}
-
 .work__card h1 {
 	position: relative;
 	top: -65px;
