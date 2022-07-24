@@ -230,6 +230,7 @@ html {
 	width: 100%;
 	max-width: 1300px;
 	padding: 0 50px;
+	
 }
 
 .main__content h1 {
@@ -553,8 +554,8 @@ html {
 
 .footer__container{
 	background-color: var(--navbar-color);
-	padding: 4rem;
 	display: flex;
+	height: 180px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
