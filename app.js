@@ -43,6 +43,5 @@ window.onscroll = function() {
 }
 
 // The other thing
-
 setRandomImage(document.getElementById('infiniteEmbat'), "Infinite")
 setRandomImage(document.getElementById('emsweeper'), "Emsweeper")
