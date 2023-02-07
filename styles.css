@@ -367,6 +367,10 @@ html {
 	background-position: center;
 	text-decoration: none;
 	color: #fff;
+
+	transform: scale(1);
+	transition: 0.2s ease-out;
+	cursor: pointer;
 }
 
 #account_info {
@@ -394,7 +398,7 @@ html {
 	position: relative;
 	background-size: cover;
 	background-position: center;
-	color: #fff;
+	color: #fff;	
 }
 
 #youtube {
@@ -504,6 +508,10 @@ html {
 	background-position: center;
 	text-decoration: none;
 	color: #fff;
+
+	transform: scale(1);
+	transition: 0.2s ease-out;
+	cursor: pointer;
 }
 
 .work__card:hover {
